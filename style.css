@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #031540;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(-90deg,#031540 65%,#fff 35%);
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #031540;
+    border-radius: 50% ;
+    border: 25px solid #fff;
+    outline: 25px solid #031540;
+}
+.home-image img {
+    position: relative ;
+    bottom: 160px;
+    max-width: 600px;
+    right: 30px;
+}
+
+.home-content {
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+}
+.home-content h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    text-align:right ;
+}
+
+.home-content h3 {
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: .5px #fff;
+    background-image: linear-gradient(#00abf0,#00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -250px 0;
+    animation: animateText 6s linear infinite;
+}
+@keyframes animateText {
+    0% 95% 100%{ background-position: -200px 0;}65%,85% {
+        background-position: 0 0;
+} 
+}
+.home-content p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+.home-sci {
+    margin: 25px 0 40px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 2opx;
+    color: #00abf0;
+    text-decoration: none;
+    margin-left: 12px;
+    transition: .3s;
+}
+.home-sci a:hover {
+    background: #00abf0;
+    color: #fff;
+    border-color: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+}
+.btn {
+    padding: 12px 35px;
+    background: #00abf0;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+}
+.btn:hover {
+    box-shadow: none;
+}
+
+.section-7 {
+    padding: 170px 0px 170px 0px;
+    background-image: url(../images/footer-img.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.section-7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section-7-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    padding-top: 100px;
+}
+
+.section-7-text {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.section-7-icons {
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+.social-icons {
+    color: #FFFFFF;
+}
+
+.social-icons:hover {
+    color: #C5C5C5;
+}
+
+.social-icons:not(:last-child) {
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .section-7-inner {
+        width: 75%;
+    }
+
+    .section-7-text {
+        font-size: 20px;
+    }
+
+    .section-7-icons {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 426px) {
+    .section-7 {
+        padding: 140px 0px 140px 0px;
+    }
+
+    .section-7-inner {
+        width: 85%;
+        padding-top: 70px;
+    }
+
+    .section-7-text {
+        font-size: 16px;
+    }
+
+    .section-7-icons {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-7 {
+        padding: 130px 0px;
+    }
+
+    .section-7-inner {
+        width: 90%;
+        padding-top: 60px;
+    }
+}
+
+.footer {
+    padding: 50px 50px 30px 50px !important;
+    background-color: #000000;
+}
+
+.section-footer-inner {
+    color: #FFFFFF;
+}
+
+@media (max-width: 426px) {
+    .footer {
+        padding: 30px 30px 20px 30px !important;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}
